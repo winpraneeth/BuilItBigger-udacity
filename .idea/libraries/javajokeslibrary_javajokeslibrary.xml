@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="javajokeslibrary.javajokeslibrary">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/javajokeslibrary/build/libs/javajokeslibrary.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
