@@ -39,7 +39,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void launchJokeActivity(View view) {
-        new FetchJokeTask().execute(this);
+        new FetchJokeTask(this).execute();
     }
 
 }
