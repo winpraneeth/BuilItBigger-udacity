@@ -1,8 +1,9 @@
 package android.example.com.androidjokes;
 
-        import android.content.Intent;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,6 +28,7 @@ public class JokeActivityFragment extends Fragment {
         TextView jokeTextView = (TextView) rootView.findViewById(R.id.joke_textView);
         if (joke != null && joke.length() != 0) {
             jokeTextView.setText(joke);
+            Log.d(LOG_TAG, "Retrieved joke from GCE");
         }
         return rootView;
     }
