@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -43,8 +42,8 @@ public class MainActivityFragment extends Fragment {
         return root;
     }
 
-    public void launchJokeActivity(){
-        Toast.makeText(getActivity(), "Need paid version to view Jokes!!", Toast.LENGTH_SHORT).show();
+    public void launchJokeActivity() {
+        new FetchJokeTask(getActivity()).execute(getContext());
     }
 
 
